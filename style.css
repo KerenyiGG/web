@@ -16,20 +16,21 @@ body {
 }
 
 .box1{
- background-color: red;
- float: left;
+   float: left;
+    width: 320px;
+ height: 210px;
 }
 
 .box2{
- background-color: green;
- float: left;
+    float: left;
+    width: 320px;
+ height: 210px;
 }
 
 .box3 {
- background-color: blue;
- width: 422px;
- height: 100px;
- clear: both;
+    float: left;
+    width: 320px;
+ height: 210px;
 }
 
 .nav ul {
