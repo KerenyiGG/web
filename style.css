@@ -33,6 +33,12 @@ body {
  height: 210px;
 }
 
+footer {
+  text-align: left;
+  padding: 3px;
+  background-color: black;
+  color: white;}
+
 .nav ul {
     list-style-type: none;
     margin: 0;
