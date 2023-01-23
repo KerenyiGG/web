@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szám</title>
+    <style>
+        fieldset{
+            background-color: rgb(200, 255, 0);
+        }
+        legend{
+            color: rgb(0, 0, 0);
+            background-color: rgb(210, 30, 30);
+            border: 2px solid rgb(126, 25, 219);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-radius: 5px;
+
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+            <li><a href="keplink.html">KÉPLINK</a></li>
+            <li><a class="active" href="lista.html">LISTA</a></li>
+            <li><a href="tablazat.html">ÓRAREND</a></li>
+            <li><a href="urlap.html">ŰRLAP</a></li>
+            <li><a href="div.html">ÉVSZAKOK</a></li>
+
+        </ul>
+    </div>
+
+
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Számol</legend>
+            <br>
+            <input type="number" name="sz" id="a" placeholder="szám1" requiredg>
+            <input type="number" name="sz" id="b" placeholder="szám2" required>
+            <input type="text" name="sz" id="c" placeholder="eredmény" readonly>
+            <br><br>
+            <input type="submit" value="+" onclick="ad()">
+            <input type="submit" value="-" onclick="ki()">
+            <input type="submit" value="*" onclick="szor()">
+            <input type="submit" value="/" onclick="oszt()">
+            <input type="reset" value="törlés">
+        </fieldset>
+    </form>
+
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+        }
+
+        function ki() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+        }
+
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+    </script> 
+</body>
+</html>
